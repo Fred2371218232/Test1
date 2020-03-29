@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var calcVolume = function( a,b,c ) {
+        var volume = a*b*c
+        return volume
+    }
+
+    var a = 2
+    var b = 3
+    var c = 4
+    var result = calcVolume( a,b,c )
+    console.log(result)
+
+    var calcForce = function( m,A )
+    {
+        var force = m*A
+        return force
+    }
+
+    var A = 8
+    var m = 4
+    var Result = calcForce(m,A)
+    console.log(Result)
+
+    var calcVolume2 = function( x,y,z )
+    {
+        var volume2 = x*y/2*z
+        return volume2
+    }
+
+    var x = 3
+    var y = 4
+    var z = 11
+    var volume2 = calcVolume2( x,y,z )
+    console.log(volume2)
+
+    var comprehensive = function(a,b,c,m,A,x,y,z)
+    {
+        sum = calcVolume2( x,y,z )+calcVolume( a,b,c )+calcForce(m,A)
+        return sum
+    }
+
+    var x = 3
+    var y = 4
+    var z = 11
+    var A = 8
+    var m = 4
+    var a = 2
+    var b = 3
+    var c = 4
+    var sum = comprehensive(a,b,c,m,A,x,y,z)
+    console.log(sum)
+
+    var calcsqr = function(s)
+    {
+        sum = s*s
+        return sum
+    }
+
+    var s = 2
+    var sum = calcsqr(s) 
+    console.log(sum)
+    alert(sum)
+
+    var calcsqr = function(l,k)
+    {
+        sum = l/k
+        return sum
+    }
+
+    var l = 4
+    var k = 2
+    var sum = calcsqr(l,k)
+    console.log(sum)
+    alert(sum)
+</script>
+</html>
